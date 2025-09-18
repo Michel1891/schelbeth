@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>¡Equipo que utilizamos!</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: white;
+      text-align: center;
+      background-color: #000;
+    }
+
+    .fondo {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+
+    .contenido {
+      position: relative;
+      z-index: 1;
+      padding: 50px 20px;
+    }
+
+    .titulo {
+      font-size: 2.5rem;
+      color: #1fabc4;
+      animation: entrada 4s ease-out forwards, brillo 6s infinite alternate;
+      opacity: 0;
+    }
+
+    @keyframes entrada {
+      0% {
+        transform: translateY(-50px);
+        opacity: 0;
+      }
+      100% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+    }
+
+    @keyframes brillo {
+      0% {
+        text-shadow: 0 0 5px #021a15, 0 0 10px #02130f;
+      }
+      100% {
+        text-shadow: 0 0 15px #031411, 0 0 30px #011612;
+      }
+
+    }
+    button {
+      padding: 10px 18px;
+      font-size: 14px;
+      border: none;
+      background-color: transparent; /* Fondo transparente */
+      color: #111010; /* Blanco para que se vea sobre la imagen */
+      border-radius: 6px;
+      cursor: pointer;
+      transition: color 0.3s ease, text-shadow 0.3s ease;
+    }
+
+    button:hover {
+      color: #f0ecec;
+      text-shadow: 0 0 10px #0804f7;
+    }
+
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .galeria img {
+      width: 100%;
+      max-width: 300px;
+      border-radius: 10px;
+      border: 3px solid white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .galeria img:hover {
+      transform: scale(1.05);
+      border-color: #00c3ff;
+    }
+  </style>
+</head>
+<body>
+  <!-- Imagen de fondo -->
+  <img class="fondo" src="src/image/fondo2.png" alt="Fondo">
+
+  <div class="contenido">
+    <!-- Título -->
+    <h1 class="titulo">Equipo que utilizamos</h1>
+
+    <!-- Botón de volver -->
+    <button onclick="location.href='inicio.html'">Inicio</button>
+    <button onclick="location.href='quienessomos.html'">¿Quienes Somos?</button>
+    <button onclick="location.href='nuestrotrabajos.html'">Nuestro Trabajo</button>
+    <button onclick="location.href='equiposqueutilizamos.html'">Equipos que utilizamos</button>
+    <button onclick="location.href='contacto.html'">Contactos</button>
+
+    <!-- Galería de imágenes -->
+    <div class="galeria">
+      <a href="src/image/dahua.jpg" target="_blank">
+        <img src="src/image/dahua1.jpg" alt="Tutorial 1">
+      </a>
+      <a href="src/image/dahua2.jpeg" target="_blank">
+        <img src="src/image/dahua2.jpeg" alt="Tutorial 2">
+      </a>
+      <a href="src/image/dahua3.png" target="_blank">
+        <img src="src/image/dahua3.png" alt="Tutorial 3">
+      </a>
+      <a href="src/image/dahua4.jpeg" target="_blank">
+        <img src="src/image/dahua4.jpeg" alt="Tutorial 4">
+      </a>
+    <a href="src/image/dahua5.jpg" target="_blank">
+      <img src="src/image/dahua5.jpg" alt="Tutorial 4">
+    </a>
+    <a href="src/image/dahua6.jpeg" target="_blank">
+      <img src="src/image/dahua6.jpeg" alt="Tutorial 4">
+    </a>
+    <a href="src/image/dahua7.jpg" target="_blank">
+      <img src="src/image/dahua7.jpg" alt="Tutorial 1">
+    </a>
+    <a href="src/image/dahua8.jpeg" target="_blank">
+      <img src="src/image/dahua8.jpeg" alt="Tutorial 2">
+    </a>
+    <a href="src/image/dahua9.jpg" target="_blank">
+      <img src="src/image/dahua9.jpg" alt="Tutorial 3">
+    </a>
+    <a href="src/image/camara4.jpeg" target="_blank">
+      <img src="src/image/camara4.jpeg" alt="Tutorial 4">
+    </a>
+  <a href="src/image/dahua1.jpg" target="_blank">
+    <img src="src/image/dahua1.jpg" alt="Tutorial 4">
+  </a>
+  <a href="src/image/dahua6.jpeg" target="_blank">
+    <img src="src/image/dahua6.jpeg" alt="Tutorial 4">
+    </div>
+  </div>
+</body>
+</html>
